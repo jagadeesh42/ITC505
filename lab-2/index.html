@@ -1,74 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jagadeesh Dhulipudi's Introduction</title>
+    <title>Academic Paper Conversion</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="container">
-        <h1>Jagadeesh Dhulipudi</h1>
-        <div class="contact">
-            <a href="mailto:jd2962@nau.edu">jd2962@nau.edu</a> |
-            <a href="https://www.linkedin.com/in/jagadeesh-dhulipudi">LinkedIn</a> |
-            <a href="https://github.com/jagadeesh42">GitHub</a>
-        </div>
+    <header>
+        <h1>Advancing Cybersecurity through Federated Learning</h1>
+        <h2>Current Approaches and Future Directions</h2>
+        <p><strong>Author:</strong> Jagadeesh Dhulipudi</p>
+    </header>
 
-        <div class="section">
-            <h2>Profile</h2>
-            <p>M.S. in Computer Science @ Northern Arizona University (Expected May 2026) with 4+ years of IT
-                experience. Teaching Assistant and Research Coordinator with leadership and mentoring skills. Currently
-                serving as ACM Student Chapter President, guiding student activities and technical events. Professional
-                interests include cybersecurity, machine learning, and software development.</p>
-        </div>
+    <!-- Paper Content -->
+    <article>
+        <section>
+            <h2>Abstract</h2>
+            <p>
+                Federated Learning (FL) has emerged as a transformative paradigm in machine learning, 
+                allowing multiple parties to collaboratively train models without sharing raw data. 
+                This paper explores its applications in cybersecurity, focusing on architectures, 
+                attack resilience, and optimization strategies.
+            </p>
+        </section>
 
+        <section>
+            <h2>1. Introduction</h2>
+            <p>
+                With the growth of cyber threats, the need for privacy-preserving and collaborative 
+                security mechanisms has intensified. FL provides a framework to train robust 
+                intrusion detection models while ensuring sensitive organizational data remains 
+                local.
+            </p>
+        </section>
 
-        <div class="section">
-            <h2>Education</h2>
-            <h3>Northern Arizona University</h3>
-            <p>M.S. Computer Science, Expected May 2026</p>
+        <section>
+            <h2>2. Federated Learning Architectures in Cybersecurity</h2>
+            <p>
+                Different FL architectures such as cross-device and cross-silo models have 
+                been applied to distributed network security. These approaches enable collaborative 
+                defense mechanisms across organizations.
+            </p>
+        </section>
+
+        <section>
+            <h2>3. Attacks and Defenses in FL</h2>
+            <p>
+                FL introduces new vulnerabilities, including model poisoning and inference attacks. 
+                Defensive measures such as differential privacy, secure aggregation, and anomaly 
+                detection are critical to safeguard the system.
+            </p>
+        </section>
+
+        <section>
+            <h2>4. Optimization and Personalization</h2>
+            <p>
+                Personalized FL strategies ensure that models adapt to heterogeneous data 
+                distributions. Techniques like clustered FL and transfer learning improve 
+                applicability in real-world cybersecurity.
+            </p>
+        </section>
+
+        <section>
+            <h2>5. Conclusion</h2>
+            <p>
+                FL holds significant promise for advancing cybersecurity by enabling secure 
+                collaboration. Future research should explore hybrid approaches combining 
+                blockchain, edge computing, and federated reinforcement learning.
+            </p>
+        </section>
+
+        <section>
+            <h2>References</h2>
             <ul>
-                <li>Teaching Assistant: CS 500 & CS 345</li>
-                <li>Research Coordinator (Health Sciences) under Dr. Sanderson</li>
+                <li>Kairouz, P., McMahan, B., et al. "Advances and Open Problems in Federated Learning." Foundations and Trends in ML, 2021.</li>
+                <li>Hard, A., et al. "Federated Learning for Mobile Keyboard Prediction." arXiv preprint, 2019.</li>
+                <li>Bonawitz, K., et al. "Towards Federated Learning at Scale." SysML, 2019.</li>
             </ul>
-        </div>
+        </section>
+    </article>
 
+    <!-- Addendum Section -->
+    <article>
+        <h2>Addendum</h2>
+        <p>
+            While converting this paper into HTML, I used semantic tags to preserve structure:
+        </p>
+        <ul>
+            <li><code>&lt;header&gt;</code> for the title and author details.</li>
+            <li><code>&lt;article&gt;</code> to wrap both the paper and addendum.</li>
+            <li><code>&lt;section&gt;</code> for major divisions (Abstract, Introduction, etc.).</li>
+            <li><code>&lt;h2&gt;</code> for section headings for clear hierarchy.</li>
+            <li><code>&lt;ul&gt;</code> for references to maintain list format.</li>
+            <li><code>&lt;footer&gt;</code> with JavaScript for last modified date as required.</li>
+        </ul>
+        <p>
+            My choices were guided by readability, semantic correctness, and future CSS styling 
+            flexibility.
+        </p>
+    </article>
 
-        <div class="section">
-            <h2>Experience</h2>
-            <h3>Module Lead — ValueLabs LLP</h3>
-            <p>Hyderabad, India</p>
-            <ul>
-                <li>Led modules and mentored team members across delivery cycles.</li>
-                <li>Worked with stakeholders to ensure project success.</li>
-            </ul>
-
-
-            <h3>Event Reservations Admin — Northern Arizona University</h3>
-            <p>Flagstaff, Arizona</p>
-            <ul>
-                <li>Managed campus reservations and communication with student organizations.</li>
-            </ul>
-
-        </div>
-
-
-        <div class="section">
-            <h2>Skills & Intrests</h2>
-            <ul>
-                <li>Programming: C, Python, Java</li>
-                <li>Cybersecurity & Research</li>
-                <li>Leadership & Mentoring</li>
-                <li>Professional Interests: Cybersecurity, Machine Learning, Software Development</li>
-                <li>Leadership Role: ACM Student Chapter President</li>
-            </ul>
-        </div>
-
-
-    </div>
+    <!-- Footer with last updated -->
+    <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    <script type="text/javascript">
+        var x = document.lastModified;
+        document.getElementById('lastModified').textContent = x;
+    </script>
 </body>
-
 </html>
