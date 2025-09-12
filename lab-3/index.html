@@ -2,43 +2,74 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>ITC505 Lab 3 - Custom Font</title>
+    <title>ITC505 Lab 3 - Crazy Font!</title>
+    
     <style>
-        /* Step 1: Serve the font from your server */
+        /* Serve the font locally */
         @font-face {
-            font-family: 'ComicNeue';
-            src: url('fonts/ComicNeue-Regular.woff2') format('woff2');
+            font-family: 'Rye';
+            src: url('fonts/Rye-Regular.woff2') format('woff2');
             font-weight: normal;
             font-style: normal;
         }
 
-        /* Step 2: Apply the font to the page */
+        /* Crazy styling */
         body {
-            font-family: 'ComicNeue', Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f5f5f5;
-            padding: 20px;
+            font-family: 'Rye', cursive;
+            background: linear-gradient(120deg, #ffcccc, #ffe066);
+            color: #2d1a47;
+            padding: 30px;
+            line-height: 1.8;
+            text-align: center;
         }
 
         h1 {
-            color: #2c3e50;
+            font-size: 4em;
+            color: #ff0066;
+            text-shadow: 2px 2px #ffcc00;
+            margin-bottom: 20px;
         }
 
         p {
-            color: #34495e;
+            font-size: 1.5em;
+            color: #1a237e;
+            margin-bottom: 20px;
+        }
+
+        .note {
+            font-size: 1.2em;
+            color: #00796b;
+            font-style: italic;
+        }
+
+        a {
+            color: #ff5722;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 0.9em;
+            color: #444;
         }
     </style>
 </head>
 <body>
-    <h1>Serving a Custom Font</h1>
+    <h1>Welcome to Crazy Font Lab!</h1>
+
     <p>
-        This page demonstrates how to serve a custom font to a browser. The font used here is
-        <strong>Comic Neue</strong>, which is not commonly installed on most computers. We used the
-        <code>@font-face</code> CSS rule to instruct the browser to download and apply this font.
+        This page is using a super silly font called <strong>Rye</strong> to show how to serve
+        a font locally from the server. The font file <code>Rye-Regular.woff2</code> is in the
+        fonts folder and loaded via CSS <code>@font-face</code>.
     </p>
-    <p>
-        When the browser loads this page, it makes a request to the server for the font file. Once
-        downloaded, the browser renders all text using this font, giving the page a unique look.
+
+    <p class="note">
+        Notice the bright background, big heading, and funky colors! Definitely not a usual font.
     </p>
 
     <!-- Footer required by the assignment -->
@@ -47,6 +78,7 @@
             <span id="lastModified"></span>
         </p>
     </footer>
+
     <script type="text/javascript">
         var x = document.lastModified;
         document.getElementById('lastModified').textContent = x;
