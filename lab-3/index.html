@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ITC505 Lab 3 - Custom Font</title>
+    <style>
+        /* Step 1: Serve the font from your server */
+        @font-face {
+            font-family: 'ComicNeue';
+            src: url('fonts/ComicNeue-Regular.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        /* Step 2: Apply the font to the page */
+        body {
+            font-family: 'ComicNeue', Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #2c3e50;
+        }
+
+        p {
+            color: #34495e;
+        }
+    </style>
+</head>
+<body>
+    <h1>Serving a Custom Font</h1>
+    <p>
+        This page demonstrates how to serve a custom font to a browser. The font used here is
+        <strong>Comic Neue</strong>, which is not commonly installed on most computers. We used the
+        <code>@font-face</code> CSS rule to instruct the browser to download and apply this font.
+    </p>
+    <p>
+        When the browser loads this page, it makes a request to the server for the font file. Once
+        downloaded, the browser renders all text using this font, giving the page a unique look.
+    </p>
+
+    <!-- Footer required by the assignment -->
+    <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    <script type="text/javascript">
+        var x = document.lastModified;
+        document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+</html>
