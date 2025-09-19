@@ -1,0 +1,70 @@
+/* General reset */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #222;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #0a3d62;
+}
+
+header h1 {
+    font-size: 2.2em;
+    color: #0a3d62;
+}
+
+header h2 {
+    font-size: 1.5em;
+    color: #3c6382;
+    margin-top: 5px;
+}
+
+header p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Sections */
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    color: #0a3d62;
+    margin-bottom: 10px;
+    border-left: 5px solid #38ada9;
+    padding-left: 10px;
+}
+
+/* References */
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+/* Addendum */
+article h3 {
+    margin-top: 20px;
+    color: #3c6382;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 0.85em;
+    color: #555;
+    margin-top: 40px;
+    padding-top: 15px;
+    border-top: 2px solid #ccc;
+}
