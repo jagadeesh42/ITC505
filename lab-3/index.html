@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>ITC505 Lab 3 - Crazy Font!</title>
+    <title>Lab 3: Serving Fonts</title>
     
     <style>
-        /* Serve the font locally */
         @font-face {
             font-family: 'Rye';
             src: url('fonts/Rye-Regular.woff2') format('woff2');
@@ -13,66 +12,74 @@
             font-style: normal;
         }
 
-        /* Crazy styling */
+        /* Body and main content styling */
         body {
             font-family: 'Rye', cursive;
-            background: linear-gradient(120deg, #ffcccc, #ffe066);
-            color: #2d1a47;
-            padding: 30px;
-            line-height: 1.8;
-            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        .content {
+            padding: 40px;
+            background: linear-gradient(120deg, #ffe066, #ffcccc);
+            min-height: 80vh;
+            text-align: left;
         }
 
         h1 {
-            font-size: 4em;
-            color: #ff0066;
-            text-shadow: 2px 2px #ffcc00;
+            font-size: 3em;
+            color: #2d1a47;
             margin-bottom: 20px;
+            text-align: center;
         }
 
         p {
-            font-size: 1.5em;
+            font-size: 1.3em;
             color: #1a237e;
             margin-bottom: 20px;
         }
 
         .note {
-            font-size: 1.2em;
-            color: #00796b;
             font-style: italic;
+            color: #00796b;
         }
 
-        a {
-            color: #ff5722;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
+        /* Footer styling separate */
         footer {
-            margin-top: 50px;
-            font-size: 0.9em;
-            color: #444;
+            background-color: #ff6f00;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        #lastModified {
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to Crazy Font Lab!</h1>
 
-    <p>
-        This page is using a super silly font called <strong>Rye</strong> to show how to serve
-        a font locally from the server. The font file <code>Rye-Regular.woff2</code> is in the
-        fonts folder and loaded via CSS <code>@font-face</code>.
-    </p>
+    <div class="content">
+        <h1>Lab 3: Serving fonts</h1>
 
-    <p class="note">
-        Notice the bright background, big heading, and funky colors! Definitely not a usual font.
-    </p>
+        <p>
+            This page demonstrates how to serve a custom font directly from a web server using
+            the <code>@font-face</code> CSS rule. The font used here is <strong>Rye</strong>,
+            which is hosted locally in the <code>fonts/</code> folder.
+        </p>
 
-    <!-- Footer required by the assignment -->
+        <p>
+            When a browser loads this page, it requests the font file from the server. Once the
+            font is downloaded, it is applied to all the text on the page. This ensures a
+            consistent look regardless of whether the user has the font installed on their system.
+        </p>
+
+        <p class="note">
+            Note: The font file must be correctly referenced and accessible on the server for
+            the text to render as intended.
+        </p>
+    </div>
     <footer>
         <p>Last updated: 
             <span id="lastModified"></span>
@@ -83,5 +90,6 @@
         var x = document.lastModified;
         document.getElementById('lastModified').textContent = x;
     </script>
+
 </body>
 </html>
