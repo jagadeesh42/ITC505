@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ITC505 - Lab 6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>My Lab 6 Page</h1>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="Logo" width="50">
+    </header>
+
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Assignments</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main>
+        <h2>Interactive Number Sort</h2>
+        <p>Enter numbers separated by commas, and click "Sort" to see them ordered.</p>
+        <input type="text" id="numbersInput" placeholder="e.g. 7,3,9,1,4">
+        <button id="sortButton">Sort Numbers</button>
+        <p id="result"></p>
+    </main>
+
+    <!-- Advertisement -->
+    <aside class="advertisement">
+        <a href="https://www.amazon.com/dp/B08LMPCX3D" target="_blank">
+            <img width="200" height="150" src="https://m.media-amazon.com/images/I/414aTqtPerL._AC_SY741_.jpg" alt="Lepro LED Desk Lamp" decoding="async">
+        </a>
+        <a href="https://www.amazon.com/dp/B08LMPCX3D" target="_blank">
+            <img width="200" height="150" src="https://m.media-amazon.com/images/I/61PYZK6txcL._AC_SX679_.jpg" alt="Lepro LED Desk Lamp Lightning" decoding="async">
+        </a>
+        
+    </aside>
+
+
+    <!-- Footer -->
+    <footer>
+        <h3>Addendum</h3>
+        <p>
+            I created a **Holy Grail Layout** with CSS Grid.
+            In the main section, I implemented an **interactive bubble sort tool**
+            where users can input numbers and see them sorted.
+            I solved this by writing a simple bubble sort function in JavaScript and
+            connecting it to a button event.
+            One difficulty was handling invalid input; I solved it by filtering out
+            non-numeric values.
+        </p>
+        <p>Last updated: <span id="lastModified"></span></p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script>
+        var x = document.lastModified;
+        document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+
+</html>
