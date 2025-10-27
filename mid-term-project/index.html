@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paths of Fate Story</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
         <h1>Paths of Fate: A Journey of Choices</h1>
@@ -18,25 +20,38 @@
         <button id="restart" style="display:none;">Restart Adventure</button>
     </main>
     <footer>
-        <p>Last updated: 
+        <p><b>Addendum:</b> The creation of <i>Paths of Fate: A Journey of Choices</i> was an exciting journey in
+            interactive storytelling and web development. One of the main challenges was ensuring smooth functionality
+            between story choices and JavaScript logic. Early versions had issues with button responses and scene
+            progression, which were resolved through debugging and refining event handling.</p>
+
+        <p>Another key challenge was balancing narrative depth with user clarity. With multiple branching paths, it was
+            easy for the story to become confusing, so we focused on simplifying the structure and making each choice
+            meaningful and intuitive.</p>
+
+        <p>User testing proved invaluable during development. Feedback from testers highlighted areas where story flow
+            and choice clarity could be improved. Iterative adjustments based on this feedback greatly enhanced the
+            overall experience and engagement.</p>
+
+        <p>Through this project, we learned that interactive storytelling is not only about writing a compelling
+            plot—it's about creating an experience that responds smoothly to user decisions. Careful design, consistent
+            logic, and user-centered thinking are crucial for a successful interactive narrative.</p>
+
+        <p>Overall, developing this adventure deepened our understanding of JavaScript interactivity, DOM manipulation,
+            and the art of creating dynamic, user-driven stories. It was both a technical and creative learning
+            experience that strengthened problem-solving and design skills.</p>
+
+        <p>Last updated:
             <span id="lastModified"></span>
         </p>
 
-        <p><b>Addendum:</b> The creation of <i>Paths of Fate: A Journey of Choices</i> was an exciting journey in interactive storytelling and web development. One of the main challenges was ensuring smooth functionality between story choices and JavaScript logic. Early versions had issues with button responses and scene progression, which were resolved through debugging and refining event handling.</p>
-
-        <p>Another key challenge was balancing narrative depth with user clarity. With multiple branching paths, it was easy for the story to become confusing, so we focused on simplifying the structure and making each choice meaningful and intuitive.</p>
-
-        <p>User testing proved invaluable during development. Feedback from testers highlighted areas where story flow and choice clarity could be improved. Iterative adjustments based on this feedback greatly enhanced the overall experience and engagement.</p>
-
-        <p>Through this project, we learned that interactive storytelling is not only about writing a compelling plot—it’s about creating an experience that responds smoothly to user decisions. Careful design, consistent logic, and user-centered thinking are crucial for a successful interactive narrative.</p>
-
-        <p>Overall, developing this adventure deepened our understanding of JavaScript interactivity, DOM manipulation, and the art of creating dynamic, user-driven stories. It was both a technical and creative learning experience that strengthened problem-solving and design skills.</p>
     </footer>
 
     <script>
-         var x = document.lastModified;
-         document.getElementById('lastModified').textContent = x;
+        var x = document.lastModified;
+        document.getElementById('lastModified').textContent = x;
     </script>
     <script src="script.js"></script>
 </body>
+
 </html>
