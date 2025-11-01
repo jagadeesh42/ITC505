@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 7 - Mad Lib</title>
+</head>
+<body>
+    <h1>Mad Lib Game</h1>
+    <form method="POST" action="/ITC505/lab-7/index.html">
+        <label>Adjective: <input type="text" name="adjective" required></label><br>
+        <label>Noun: <input type="text" name="noun" required></label><br>
+        <label>Verb: <input type="text" name="verb" required></label><br>
+        <label>Place: <input type="text" name="place" required></label><br>
+        <label>Plural Noun: <input type="text" name="pluralNoun" required></label><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <footer>
+        <p>Last updated:
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+</html>
