@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Web Form - ITC505 Lab 8</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Secure Registration Form - Lab 8</h2>
+
+        <form onsubmit="return validateForm()">
+            <label>First Name:</label>
+            <input type="text" id="fname">
+
+            <label>Last Name:</label>
+            <input type="text" id="lname">
+
+            <label>Email:</label>
+            <input type="text" id="email">
+
+            <label>Password:</label>
+            <input type="password" id="password">
+
+            <label>Confirm Password:</label>
+            <input type="password" id="confirmPassword">
+
+            <div id="error" class="error"></div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
