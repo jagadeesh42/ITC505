@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lights Out - ITC505 Final</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Lights Out</h1>
+    <p>Click any square to toggle it and its neighbors. Turn all lights off to win!</p>
+
+    <div id="board"></div>
+
+    <footer>
+        <p>Last updated:
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+
+    <script>
+        var x = document.lastModified;
+        document.getElementById("lastModified").textContent = x;
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
